@@ -1,0 +1,235 @@
+*,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    --white: #fff;
+    --gray: #333;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.6rem;
+    color: var(--gray);
+    background-color: #f2f2f2;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    padding: 0;
+}
+
+/* Header */
+header {
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem;
+    position: absolute;
+}
+
+header a {
+    color: var(--white);
+    font-size: 2.2rem;
+}
+
+#logo img {
+    height: 15rem;
+    padding-top: 4rem;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0 1rem;
+    text-transform: uppercase;
+}
+
+/* Banner */
+
+#banner {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/PANDA-SUGAR-TEA-Illustration-sans-titre-3-jpg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    text-align: center;
+    padding: 2rem;
+}
+
+#banner p {
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: .25rem;
+}
+
+h1 {
+    font-size: 6rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+#banner::after {
+    content: '';
+    display: block;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .4;
+}
+
+#banner p,
+header,
+h1 {
+    z-index: 1;
+}
+
+/* One */
+#one article {
+    width: 50%;
+    padding: 5rem;
+    margin: 5rem;
+}
+
+#one {
+    display: flex;
+}
+
+#one h2 {
+    color: darkred;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#one p {
+    text-align: justify;
+    letter-spacing: .1rem;
+    line-height: 3rem;
+}
+
+#one .p1 {
+    background-color: lavender;
+}
+
+#one span {
+    text-decoration: underline;
+}
+
+#one .p2 {
+    background-color: burlywood;
+}
+
+#one .p2 h3 {
+    text-decoration: underline;
+    font-weight: 300;
+}
+
+/* Two */
+
+#two {
+    background-image: url(../img/b.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 10rem 2rem 8rem 2rem;
+}
+
+#two h2 {
+    font-size: 3rem;
+    color: var(--white);
+    text-align: center;
+    letter-spacing: 2.2rem;
+}
+
+/* Three */
+#three {
+    padding: 8rem 2rem;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 120rem;
+    margin: 6rem auto 0 auto;
+}
+
+.image {
+    width: 30rem;
+    margin: 1rem;
+    transition: transform .5s;
+}
+
+.image img {
+    width: 100%;
+    border: 2rem solid var(--white);
+}
+
+.image:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: lightslategray;
+    color: var(--gray);
+    text-align: center;
+    padding: 4rem 0 4rem 0;
+}
+
+.date {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.heures {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+footer li {
+    display: inline-block;
+    margin: 1.5rem;
+}
+
+footer li a {
+    font-size: 2.5rem;
+    color: var(--gray);
+    transition: color .2s;
+}
+
+footer li a:hover {
+    color: #fff;
+}
+
+footer .p1 {
+    margin-top: 0;
+    transition: color .2s;
+}
+
+footer .p1:hover {
+    color: #fff;
+}
